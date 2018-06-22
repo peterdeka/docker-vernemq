@@ -74,10 +74,10 @@ EOF
 
     echo "erlang.distribution.port_range.minimum = 9100" >> /etc/vernemq/vernemq.conf
     echo "erlang.distribution.port_range.maximum = 9109" >> /etc/vernemq/vernemq.conf
-    echo "listener.tcp.default = ${IP_ADDRESS}:1883" >> /etc/vernemq/vernemq.conf
-    echo "listener.ws.default = ${IP_ADDRESS}:8080" >> /etc/vernemq/vernemq.conf
-    echo "listener.vmq.clustering = ${IP_ADDRESS}:44053" >> /etc/vernemq/vernemq.conf
-    echo "listener.http.metrics = ${IP_ADDRESS}:8888" >> /etc/vernemq/vernemq.conf
+    echo "listener.tcp.default = 0.0.0.0:1883" >> /etc/vernemq/vernemq.conf
+    echo "listener.ws.default = 0.0.0.0:8080" >> /etc/vernemq/vernemq.conf
+    echo "listener.vmq.clustering = 0.0.0.0:44053" >> /etc/vernemq/vernemq.conf
+    echo "listener.http.metrics = 0.0.0.0:8888" >> /etc/vernemq/vernemq.conf
 
     echo "########## End ##########" >> /etc/vernemq/vernemq.conf
 fi
